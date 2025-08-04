@@ -159,7 +159,7 @@ def build_parser():
 
     # Document Get All
     get_all_document_parser = document_subparsers.add_parser(
-        "get-all", help="Retrieve all documents from a collection."
+        "list", help="Retrieve all documents from a collection."
     )
     get_all_document_parser.add_argument(
         "collection_name", type=str, help="Name of the collection to retrieve documents from."

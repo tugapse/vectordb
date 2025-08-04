@@ -69,7 +69,7 @@ def main():
                     where=where_clause,
                     where_document=where_document_clause
                 )
-            elif args.document_command == "get_all":
+            elif args.document_command == "list":
                 app.get_all_documents(collection_name=args.collection_name)
             else:
                 # This case should ideally not be reached if argparse is configured correctly

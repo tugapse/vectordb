@@ -221,7 +221,7 @@ class ChromaAppBase:
                 n_results=n_results,
                 where=where,
                 where_document=where_document,
-                include=['documents', 'distances', 'metadatas', 'ids'] # Include relevant information
+                include=['documents', 'distances', 'metadatas'] # Include relevant information
             )
             print(f"Query results from collection '{collection_name}':")
             if results and results.get('documents'):
